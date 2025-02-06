@@ -162,12 +162,22 @@ installed the software:
 ./create-setup-script.sh > ~/setup-open-p4studio.bash
 ```
 
+```bash
+source ~/setup-open-p4studio.bash
+```
+
 If you only install one version of this software on a system,
 you will likely find it very convenient to add a line like
 the following to your `~/.bashrc` file:
 
 ```bash
-source ~/setup-open-p4studio.bash
+cat setup-open-p4studio.bash >> ~/.bashrc
+```
+
+Then, apply the changes:
+
+```bash
+source  ~/.bashrc
 ```
 
 If you do not do this, you will need to do that command once in each
